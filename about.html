@@ -8,8 +8,6 @@
 <meta name="author" content="공덕 노래방 내돈내산">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://gongdeok-song-review.namanavi.com/about.html">
-<meta name="bpaas-design-system" content="brutalist-avantgarde">
-<meta name="bpaas-design-theme" content="kr-neon-void">
 <meta property="og:type" content="website">
 <meta property="og:title" content="공덕 노래방 정보 - 내돈내산 방문 데이터 분석">
 <meta property="og:description" content="공덕 노래방 내돈내산 방문 후기 상세 정보. 최신 시설, 합리적인 가격, 청결도까지 완벽한 공덕역 노래방을 데이터 기반으로 분석합니다. 지금 예약하세요!">
@@ -23,325 +21,325 @@
 <title>공덕 노래방 정보 - 내돈내산 방문 데이터 분석</title>
 <style>
 /* =============================================
-   BRUTALIST AVANT-GARDE DESIGN SYSTEM
-   테마: kr-neon-void
-   모든 클래스명, 변수, 구조는 이전 페이지와 동일
-   ============================================= */
+ BRUTALIST AVANT-GARDE DESIGN SYSTEM
+ 테마: kr-neon-void
+ 모든 클래스명, 변수, 구조는 이전 페이지와 동일
+ ============================================= */
 :root {
-  --bg-primary: #0d0d0d;
-  --bg-secondary: #1a1a1a;
-  --text-primary: #e0e0e0;
-  --text-secondary: #b0b0b0;
-  --accent-neon: #00ffc8;
-  --accent-pink: #ff0080;
-  --accent-yellow: #ffe600;
-  --border-thick: 4px solid var(--accent-neon);
-  --border-thin: 2px solid var(--accent-neon);
-  --font-mono: 'Courier New', Courier, monospace;
-  --font-sans: Arial, Helvetica, sans-serif;
-  --shadow-neon: 0 0 15px rgba(0, 255, 200, 0.3);
-  --transition-speed: 0.2s;
-  --content-max-width: 1200px;
-  --header-height: 70px;
-  --hamburger-size: 40px;
+ --bg-primary: #0d0d0d;
+ --bg-secondary: #1a1a1a;
+ --text-primary: #e0e0e0;
+ --text-secondary: #b0b0b0;
+ --accent-neon: #00ffc8;
+ --accent-pink: #ff0080;
+ --accent-yellow: #ffe600;
+ --border-thick: 4px solid var(--accent-neon);
+ --border-thin: 2px solid var(--accent-neon);
+ --font-mono: 'Courier New', Courier, monospace;
+ --font-sans: Arial, Helvetica, sans-serif;
+ --shadow-neon: 0 0 15px rgba(0, 255, 200, 0.3);
+ --transition-speed: 0.2s;
+ --content-max-width: 1200px;
+ --header-height: 70px;
+ --hamburger-size: 40px;
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
 }
 
 body {
-  background-color: var(--bg-primary);
-  color: var(--text-primary);
-  font-family: var(--font-sans);
-  line-height: 1.6;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+ background-color: var(--bg-primary);
+ color: var(--text-primary);
+ font-family: var(--font-sans);
+ line-height: 1.6;
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
 }
 
 a {
-  color: var(--accent-neon);
-  text-decoration: none;
-  transition: color var(--transition-speed);
+ color: var(--accent-neon);
+ text-decoration: none;
+ transition: color var(--transition-speed);
 }
 a:hover {
-  color: var(--accent-pink);
+ color: var(--accent-pink);
 }
 
 img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+ max-width: 100%;
+ height: auto;
+ display: block;
 }
 
 /* ---------- HEADER ---------- */
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: var(--header-height);
-  background: var(--bg-secondary);
-  border-bottom: var(--border-thin);
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-  box-shadow: var(--shadow-neon);
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: var(--header-height);
+ background: var(--bg-secondary);
+ border-bottom: var(--border-thin);
+ z-index: 1000;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 0 20px;
+ box-shadow: var(--shadow-neon);
 }
 
 .header__logo {
-  font-family: var(--font-mono);
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: var(--accent-neon);
-  text-transform: uppercase;
-  letter-spacing: 2px;
+ font-family: var(--font-mono);
+ font-size: 1.5rem;
+ font-weight: bold;
+ color: var(--accent-neon);
+ text-transform: uppercase;
+ letter-spacing: 2px;
 }
 
 /* ---------- HAMBURGER MENU ---------- */
 .hamburger-menu {
-  display: none;  /* desktop에서는 숨김, 반응형에서 보임 */
-  flex-direction: column;
-  justify-content: space-around;
-  width: var(--hamburger-size);
-  height: var(--hamburger-size);
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 5px;
+ display: none; /* desktop에서는 숨김, 반응형에서 보임 */
+ flex-direction: column;
+ justify-content: space-around;
+ width: var(--hamburger-size);
+ height: var(--hamburger-size);
+ background: transparent;
+ border: none;
+ cursor: pointer;
+ padding: 5px;
 }
 .hamburger-menu__line {
-  width: 100%;
-  height: 3px;
-  background: var(--accent-neon);
-  border-radius: 2px;
-  transition: all 0.3s ease;
+ width: 100%;
+ height: 3px;
+ background: var(--accent-neon);
+ border-radius: 2px;
+ transition: all 0.3s ease;
 }
 
 /* ---------- NAV ---------- */
 .nav {
-  display: flex;
-  gap: 20px;
-  align-items: center;
+ display: flex;
+ gap: 20px;
+ align-items: center;
 }
 .nav__link {
-  font-family: var(--font-mono);
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  padding: 8px 12px;
-  border: var(--border-thin);
-  background: var(--bg-secondary);
-  transition: background var(--transition-speed), color var(--transition-speed);
+ font-family: var(--font-mono);
+ font-size: 0.9rem;
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ padding: 8px 12px;
+ border: var(--border-thin);
+ background: var(--bg-secondary);
+ transition: background var(--transition-speed), color var(--transition-speed);
 }
 .nav__link:hover {
-  background: var(--accent-neon);
-  color: var(--bg-primary);
+ background: var(--accent-neon);
+ color: var(--bg-primary);
 }
 
 /* ---------- MAIN / HERO ---------- */
 .main {
-  flex: 1;
-  margin-top: var(--header-height);
-  padding: 20px;
-  max-width: var(--content-max-width);
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+ flex: 1;
+ margin-top: var(--header-height);
+ padding: 20px;
+ max-width: var(--content-max-width);
+ margin-left: auto;
+ margin-right: auto;
+ width: 100%;
 }
 
 .hero {
-  text-align: center;
-  padding: 60px 20px 40px;
-  border-bottom: var(--border-thick);
-  margin-bottom: 40px;
-  background: linear-gradient(180deg, var(--bg-secondary) 0%, transparent 100%);
+ text-align: center;
+ padding: 60px 20px 40px;
+ border-bottom: var(--border-thick);
+ margin-bottom: 40px;
+ background: linear-gradient(180deg, var(--bg-secondary) 0%, transparent 100%);
 }
 .hero__title {
-  font-family: var(--font-mono);
-  font-size: 2.8rem;
-  font-weight: 900;
-  text-transform: uppercase;
-  color: var(--accent-neon);
-  text-shadow: 0 0 20px rgba(0, 255, 200, 0.5);
-  margin-bottom: 15px;
-  line-height: 1.1;
+ font-family: var(--font-mono);
+ font-size: 2.8rem;
+ font-weight: 900;
+ text-transform: uppercase;
+ color: var(--accent-neon);
+ text-shadow: 0 0 20px rgba(0, 255, 200, 0.5);
+ margin-bottom: 15px;
+ line-height: 1.1;
 }
 .hero__subtitle {
-  font-size: 1.2rem;
-  color: var(--text-secondary);
-  max-width: 700px;
-  margin: 0 auto;
+ font-size: 1.2rem;
+ color: var(--text-secondary);
+ max-width: 700px;
+ margin: 0 auto;
 }
 
 /* ---------- SECTION ---------- */
 .section {
-  margin-bottom: 50px;
+ margin-bottom: 50px;
 }
 .section__title {
-  font-family: var(--font-mono);
-  font-size: 1.8rem;
-  color: var(--accent-pink);
-  text-transform: uppercase;
-  border-left: 6px solid var(--accent-pink);
-  padding-left: 15px;
-  margin-bottom: 25px;
+ font-family: var(--font-mono);
+ font-size: 1.8rem;
+ color: var(--accent-pink);
+ text-transform: uppercase;
+ border-left: 6px solid var(--accent-pink);
+ padding-left: 15px;
+ margin-bottom: 25px;
 }
 .section__content {
-  font-size: 1rem;
-  color: var(--text-primary);
+ font-size: 1rem;
+ color: var(--text-primary);
 }
 
 /* ---------- CARD GRID ---------- */
 .card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 25px;
-  margin-top: 20px;
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+ gap: 25px;
+ margin-top: 20px;
 }
 
 .card {
-  background: var(--bg-secondary);
-  border: var(--border-thin);
-  padding: 25px;
-  transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+ background: var(--bg-secondary);
+ border: var(--border-thin);
+ padding: 25px;
+ transition: transform var(--transition-speed), box-shadow var(--transition-speed);
 }
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-neon);
+ transform: translateY(-5px);
+ box-shadow: var(--shadow-neon);
 }
 .card__title {
-  font-family: var(--font-mono);
-  font-size: 1.2rem;
-  color: var(--accent-yellow);
-  margin-bottom: 10px;
-  text-transform: uppercase;
+ font-family: var(--font-mono);
+ font-size: 1.2rem;
+ color: var(--accent-yellow);
+ margin-bottom: 10px;
+ text-transform: uppercase;
 }
 .card__text {
-  color: var(--text-secondary);
-  font-size: 0.95rem;
-  line-height: 1.5;
+ color: var(--text-secondary);
+ font-size: 0.95rem;
+ line-height: 1.5;
 }
 .card__badge {
-  display: inline-block;
-  background: var(--accent-neon);
-  color: var(--bg-primary);
-  font-family: var(--font-mono);
-  font-size: 0.7rem;
-  padding: 3px 8px;
-  margin-top: 10px;
-  font-weight: bold;
-  text-transform: uppercase;
+ display: inline-block;
+ background: var(--accent-neon);
+ color: var(--bg-primary);
+ font-family: var(--font-mono);
+ font-size: 0.7rem;
+ padding: 3px 8px;
+ margin-top: 10px;
+ font-weight: bold;
+ text-transform: uppercase;
 }
 
 /* ---------- DATA TABLE ---------- */
 .data-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 20px 0;
-  font-size: 0.95rem;
+ width: 100%;
+ border-collapse: collapse;
+ margin: 20px 0;
+ font-size: 0.95rem;
 }
 .data-table th,
 .data-table td {
-  border: var(--border-thin);
-  padding: 12px 15px;
-  text-align: left;
+ border: var(--border-thin);
+ padding: 12px 15px;
+ text-align: left;
 }
 .data-table th {
-  background: var(--bg-secondary);
-  color: var(--accent-neon);
-  font-family: var(--font-mono);
-  text-transform: uppercase;
+ background: var(--bg-secondary);
+ color: var(--accent-neon);
+ font-family: var(--font-mono);
+ text-transform: uppercase;
 }
 .data-table td {
-  background: rgba(0, 0, 0, 0.3);
-  color: var(--text-primary);
+ background: rgba(0, 0, 0, 0.3);
+ color: var(--text-primary);
 }
 
 /* ---------- FAQ ---------- */
 .faq-item {
-  border-bottom: var(--border-thin);
-  padding: 20px 0;
+ border-bottom: var(--border-thin);
+ padding: 20px 0;
 }
 .faq-item:last-child {
-  border-bottom: none;
+ border-bottom: none;
 }
 .faq-item__question {
-  font-family: var(--font-mono);
-  font-size: 1.1rem;
-  font-weight: bold;
-  color: var(--accent-neon);
-  cursor: pointer;
-  margin-bottom: 8px;
+ font-family: var(--font-mono);
+ font-size: 1.1rem;
+ font-weight: bold;
+ color: var(--accent-neon);
+ cursor: pointer;
+ margin-bottom: 8px;
 }
 .faq-item__answer {
-  color: var(--text-secondary);
-  line-height: 1.7;
+ color: var(--text-secondary);
+ line-height: 1.7;
 }
 
 /* ---------- FOOTER ---------- */
 .footer {
-  background: var(--bg-secondary);
-  border-top: var(--border-thick);
-  padding: 20px;
-  text-align: center;
-  color: var(--text-secondary);
-  font-size: 0.85rem;
-  margin-top: auto;
+ background: var(--bg-secondary);
+ border-top: var(--border-thick);
+ padding: 20px;
+ text-align: center;
+ color: var(--text-secondary);
+ font-size: 0.85rem;
+ margin-top: auto;
 }
 .footer__link {
-  color: var(--accent-pink);
+ color: var(--accent-pink);
 }
 
 /* ---------- RESPONSIVE 768px ---------- */
 @media (max-width: 768px) {
-  .hamburger-menu {
-    display: flex;  /* 모바일에서 햄버거 표시 */
-  }
+ .hamburger-menu {
+ display: flex; /* 모바일에서 햄버거 표시 */
+ }
 
-  .nav {
-    display: none;
-    position: absolute;
-    top: var(--header-height);
-    left: 0;
-    width: 100%;
-    flex-direction: column;
-    background: var(--bg-secondary);
-    border-bottom: var(--border-thick);
-    padding: 20px;
-    gap: 10px;
-  }
-  .nav.active {
-    display: flex;
-  }
+ .nav {
+ display: none;
+ position: absolute;
+ top: var(--header-height);
+ left: 0;
+ width: 100%;
+ flex-direction: column;
+ background: var(--bg-secondary);
+ border-bottom: var(--border-thick);
+ padding: 20px;
+ gap: 10px;
+ }
+ .nav.active {
+ display: flex;
+ }
 
-  .header {
-    padding: 0 15px;
-  }
+ .header {
+ padding: 0 15px;
+ }
 
-  .hero__title {
-    font-size: 2rem;
-  }
-  .hero__subtitle {
-    font-size: 1rem;
-  }
+ .hero__title {
+ font-size: 2rem;
+ }
+ .hero__subtitle {
+ font-size: 1rem;
+ }
 
-  .card-grid {
-    grid-template-columns: 1fr;
-  }
+ .card-grid {
+ grid-template-columns: 1fr;
+ }
 
-  .data-table {
-    font-size: 0.85rem;
-  }
-  .data-table th,
-  .data-table td {
-    padding: 8px 10px;
-  }
+ .data-table {
+ font-size: 0.85rem;
+ }
+ .data-table th,
+ .data-table td {
+ padding: 8px 10px;
+ }
 }
 
 /* ---------- JSON-LD (LocalBusiness) ---------- */
@@ -351,13 +349,13 @@ img {
 
 <!-- ==================== HEADER ==================== -->
 <header class="header">
-  <div class="header__logo">공덕 노래방</div>
-  <button class="hamburger-menu" aria-label="메뉴 열기" onclick="toggleNav()">
-    <span class="hamburger-menu__line"></span>
-    <span class="hamburger-menu__line"></span>
-    <span class="hamburger-menu__line"></span>
-  </button>
-  <nav class="nav" id="mainNav">
-    <a href="/" class="nav__link">홈</a>
+ <div class="header__logo">공덕 노래방</div>
+ <button class="hamburger-menu" aria-label="메뉴 열기" onclick="toggleNav()">
+ <span class="hamburger-menu__line"></span>
+ <span class="hamburger-menu__line"></span>
+ <span class="hamburger-menu__line"></span>
+ </button>
+ <nav class="nav" id="mainNav">
+ <a href="/" class="nav__link">홈</a>
 </body>
 </html>
